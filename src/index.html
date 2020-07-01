@@ -99,21 +99,20 @@
       </fieldset>
       <fieldset class="block">
         <legend>An interesting fact about you!</legend>
-        <label for="question_yes">
           Do you love cats?
-        </label>
+        <label for="yes">Yes</label>
         <input
           type="radio"
-          name="question_yes"
-          id="question_yes"
-        > Yes
+          name="question_radio"
+          id="yes"
+        >
+        <label for="no">No</label>
         <input
           type="radio"
-          name="question_no"
-          id="question_no"
-        > No
+          name="question_radio"
+          id="no"
+        >
         <br>
-        <label for="question_no"></label>
         <label for="color-picker">
           What is your favorite color?
         </label>
@@ -184,14 +183,14 @@
           </select>
         </label>
       </fieldset>
+      <button
+      class="block"
+      type="submit"
+      onsubmit="onSubmit()"
+      >
+      Submit
+      </button>
     </form>
-    <button
-     class="block"
-     type="submit"
-     onsubmit="onSubmit()"
-    >
-    Submit
-    </button>
 
     <script type="text/javascript" src="./main.js"></script>
   </body>
